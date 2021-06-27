@@ -8,7 +8,7 @@ More details about running a node at: [https://nodes.presearch.org/run](https://
 ## Usage
 From your node's terminal:
 
-`curl https://raw.githubusercontent.com/seanmarpo/presearch-node-setup/main/setup.sh | sudo sh`
+`curl https://raw.githubusercontent.com/seanmarpo/presearch-node-setup/main/setup.sh | bash`
 
 ## Why?
 This is a no-clone, hyper-minimal way to provision a new presearch node.
