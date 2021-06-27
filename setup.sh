@@ -5,7 +5,7 @@ set -e
 # Only customization is the capturing of the Presearch API Key
 setup_node() {
     read -s -p "Presearch Node API Key: " PREAPIKEY < /dev/tty
-    docker stop presearch-node ; docker rm presearch-node ; docker stop presearch-auto-updater ; docker rm presearch-auto-updater ; docker run -d --name presearch-auto-updater --restart=unless-stopped -v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower --cleanup --interval 300 presearch-node ; docker pull presearch/node ; docker run -dt --name presearch-node --restart=unless-stopped -v presearch-node-storage:/app/node -e REGISTRATION_CODE=$PREAPIKEY presearch/node ; docker logs presearch-node
+    sudo docker stop presearch-node ; sudo docker rm presearch-node ; sudo docker stop presearch-auto-updater ; sudo docker rm presearch-auto-updater ; sudo docker run -d --name presearch-auto-updater --restart=unless-stopped -v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower --cleanup --interval 300 presearch-node ; sudo docker pull presearch/node ; sudo docker run -dt --name presearch-node --restart=unless-stopped -v presearch-node-storage:/app/node -e REGISTRATION_CODE=$PREAPIKEY presearch/node ; sudo docker logs presearch-node
 }
 
 # If we do not have docker, run the docker installer script
