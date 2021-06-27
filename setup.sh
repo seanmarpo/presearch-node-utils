@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-if ! command -v docker &> /dev/null
+if ! hash docker 2>/dev/null
 then
     echo "Docker was not found, installing Docker..."
     curl https://get.docker.com/ | sudo sh
