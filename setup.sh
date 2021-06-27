@@ -1,5 +1,4 @@
 #!/bin/bash
-set -e
 
 # Magical incantation provided by Presearch
 # Only customization is the capturing of the Presearch API Key
