@@ -8,7 +8,11 @@ then
     exit
 else
     echo "Docker appears available, attempting to start node."
-    read -sp "Presearch Node API Key: " PREAPIKEY
+    stty -echo
+    printf "Presearch Node API Key: "
+    read PREAPIKEY
+    stty echo
+    printf "\n"
     sudo docker stop presearch-node
     sudo docker rm presearch-node
     sudo docker stop presearch-auto-updater
