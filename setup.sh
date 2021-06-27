@@ -4,7 +4,7 @@ set -e
 # Magical incantation provided by Presearch
 # Only customization is the capturing of the Presearch API Key
 setup_node() {
-    read -s -p "Presearch Node API Key: " PREAPIKEY
+    read -s -p "Presearch Node API Key: " PREAPIKEY < /dev/tty
     sudo docker stop presearch-node
     sudo docker rm presearch-node
     sudo docker stop presearch-auto-updater
