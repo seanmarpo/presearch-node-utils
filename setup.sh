@@ -25,9 +25,8 @@ if ! hash docker 2>/dev/null
 then
     echo "Docker was not found, installing Docker..."
     curl https://get.docker.com/ | sudo sh
-    setup_node()
-    exit
+    setup_node
 else
     echo "Docker appears available, attempting to start node."
-    setup_node()
+    setup_node
 fi
