@@ -1,3 +1,6 @@
+#!/bin/sh
+set -e
+
 if ! command -v docker &> /dev/null
 then
     echo "Docker was not found, installing Docker..."
