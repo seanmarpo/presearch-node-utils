@@ -4,10 +4,12 @@
 Presearch is a decentralized search engine. This script helps automatically provision a new presearch node.
 More details about running a node at: [https://nodes.presearch.org/run](https://nodes.presearch.org/run)
 
-This repo is designed to provide you with a setup of quick utilities that you can run without needing to clone anything
-or install git. Everything should be able to be `curl | bash`, if you so desire.
+Consider signing up for a Presearch account via my referral: [https://www.presearch.org/signup?rid=2447990](https://www.presearch.org/signup?rid=2447990)
 
 ---
+
+This repo is designed to provide you with a setup of quick utilities that you can run without needing to clone anything
+or install git. Everything should be able to be `curl | bash`, if you so desire.
 
 ## Utils
 
